@@ -1,0 +1,28 @@
+{
+  "plugins": [
+    
+  ],
+  "env": {
+    "development":{
+      "plugins":["react-hot-loader/babel"],
+      "presets":[
+        "react",
+        ["env", {
+          "targets": {
+            "browsers": [
+              "> 1%"
+            ]
+          },
+          "modules": false,
+          "debug": true
+        }]
+      ]
+    },
+    "production":{
+      "plugins":[],
+      "presets":[
+        "react"
+      ]
+    }
+  }
+}
