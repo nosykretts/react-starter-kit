@@ -1,13 +1,13 @@
 const merge = require('webpack-merge')
 const common = require('./webpack.common.js')
 const webpack = require('webpack')
-
+let port = 3000
 module.exports = merge(common, {
   devtool : 'inline-source-map',
   entry: {
     app : [
       'react-hot-loader/patch',
-      `webpack-dev-server/client?http://localhost:7676`,
+      `webpack-dev-server/client?http://localhost:${port}`,
       // budle the client for webpack-dev-server
       // and connect to the provided endpoint
       'webpack/hot/only-dev-server',
@@ -20,7 +20,7 @@ module.exports = merge(common, {
     hot: true,
     contentBase: './dist',
     disableHostCheck: true,
-    port: 7676,
+    port: port,
     host: '0.0.0.0',
     publicPath: '/'
   },
