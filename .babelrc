@@ -14,7 +14,7 @@
             ]
           },
           "modules": false,
-          "debug": true
+          "debug": false
         }]
       ]
     },

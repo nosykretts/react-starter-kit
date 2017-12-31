@@ -1,12 +1,12 @@
 {
   "name": "rrmodern",
   "version": "1.0.0",
-  "description": "React 16 Starter Kit",
+  "description": "React 16 Starter Kitsax",
   "author": "top.sick.red@gmail.com",
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "cross-env BABEL-ENV=development NODE-ENV=development webpack-dev-server --config webpack.dev.js --progress --colors",
+    "start": "cross-env BABEL-ENV=development NODE-ENV=development webpack-dev-server --config webpack.dev.js --progress --inline --colors=false --info=false",
     "build": "cross-env BABEL-ENV=production NODE-ENV=production webpack --config webpack.prod.js"
   },
   "dependencies": {
@@ -20,7 +20,6 @@
     "babel-preset-react": "^6.24.1",
     "clean-webpack-plugin": "^0.1.17",
     "cross-env": "^5.1.0",
-    "fsevents": "^1.1.2",
     "html-webpack-plugin": "^2.30.1",
     "react-hot-loader": "^3.1.1",
     "webpack": "^3.8.1",

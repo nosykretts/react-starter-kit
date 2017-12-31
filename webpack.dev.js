@@ -7,7 +7,7 @@ module.exports = merge(common, {
   entry: {
     app : [
       'react-hot-loader/patch',
-      `webpack-dev-server/client?http://localhost:${port}`,
+      `webpack-dev-server/client?http://x.fajarpatappari.tk:${port}`,
       // budle the client for webpack-dev-server
       // and connect to the provided endpoint
       'webpack/hot/only-dev-server',
@@ -22,7 +22,7 @@ module.exports = merge(common, {
     disableHostCheck: true,
     port: port,
     host: '0.0.0.0',
-    publicPath: '/'
+    publicPath: '/',
   },
   plugins : [
     new webpack.NamedModulesPlugin(),
